@@ -1,6 +1,5 @@
 package com.example.Ankit.controller;
 
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +14,7 @@ public class ControllerPage {
 
     @RequestMapping(value = {"","/","/home"})
     public String displayHomePage(){
-        return "home";
+        return "index";
     }
 
     @GetMapping("/courses")
